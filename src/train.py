@@ -60,7 +60,7 @@ def train_model(pipeline, X, y):
         grid_search.fit(X_train, y_train)
 
         # Get best model
-        best_model = random_search.best_estimator_
+        best_model =  grid_search.best_estimator_
 
         # -------------------------
         # 🔮 PREDICT
