@@ -80,7 +80,7 @@ def train_model(pipeline, X, y):
         # -------------------------
         mlflow.log_param("model", "RandomForestRegressor")
         mlflow.log_param("cv_folds", 5)
-        mlflow.log_params(random_search.best_params_)
+        mlflow.log_params(grid_search.best_params_)
         mlflow.log_param("num_rows", X.shape[0])
         mlflow.log_param("num_features", X.shape[1])
 
