@@ -57,7 +57,7 @@ def train_model(pipeline, X, y):
     with mlflow.start_run():
 
         # Train with tuning
-        grid_search_.fit(X_train, y_train)
+        grid_search.fit(X_train, y_train)
 
         # Get best model
         best_model = random_search.best_estimator_
