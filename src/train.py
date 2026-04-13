@@ -13,7 +13,7 @@ def train_model(pipeline, X, y):
     # -------------------------
     # 🔥 MLFLOW SETUP
     # -------------------------
-    mlflow.set_experiment("student_marks_prediction")
+    mlflow.set_experiment("old_car_price_prediction")
 
     # -------------------------
     # 🔀 TRAIN TEST SPLIT
